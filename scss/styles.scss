@@ -1,0 +1,40 @@
+// Palette URL: http://paletton.com/#uid=13x0C0kw0w0jyC+oRxVy4oIDfjr */
+// As hex codes */
+$color-primary-0: #0B61A4;	// Main Primary color */
+$color-primary-1: #508CBB;
+$color-primary-2: #2E74AA;
+$color-primary-3: #084B7F;
+$color-primary-4: #053A64;
+
+// As RGBa codes */
+$rgba-primary-0: rgba( 11, 97,164,1);	// Main Primary color */
+$rgba-primary-1: rgba( 80,140,187,1);
+$rgba-primary-2: rgba( 46,116,170,1);
+$rgba-primary-3: rgba(  8, 75,127,1);
+$rgba-primary-4: rgba(  5, 58,100,1);
+
+body {
+  background-color: $rgba-primary-0;
+  color: $color-primary-4;
+  padding: 70px;
+}
+.container {
+  opacity: .75;
+  background-color: white;
+}
+h1 {
+  color: black;
+  font-size: 3em;
+  padding-bottom: 2%;
+  text-align: center;
+  font-family: 'Candal', sans-serif;
+  border-bottom: solid $color-primary-4 15px;
+}
+
+.btninfo {
+  background-color: #003d66;
+}
+
+#letter {
+  display: none;
+}
