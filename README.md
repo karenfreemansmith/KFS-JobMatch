@@ -1,4 +1,4 @@
-# [Job Board](http://karenfreemansmith.github.io/letter)
+# [Job Board](http://karenfreemansmith.github.io/jobboard/letter.html)
 ![project screenshot](/img/screenshot.jpg)
 
 __Version 1.1.0: June 30, 2016__
