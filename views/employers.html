@@ -1,7 +1,28 @@
-    <h1>Job Board</h1>
     <h2>Manage Job Postings</h2>
-    <p>As an employer, I can create a company profile.</p>
-    <p>As an employer, I can add job postings for my company.</p>
-    <p>As an employer, I can view applications for a job and filter/sort by qualifications.</p>
-    <p>As an employer, I can view profiles and contact information for appicants.</p>
-    <p>As an employer, I can respond to applications by updating an application status.</p>
+
+    <div class="row employer">
+      <div class="col-xs-3">
+        <strong><a href="#">Create/Edit Company Profile</a></strong>
+      </div>
+      <div class="col-xs-3">
+        <strong><a href="#">Create/Edit Job Posting</a></strong>
+      </div>
+      <div class="col-xs-3">
+        <strong><a href="#">View Applications</a></strong>
+      </div>
+      <div class="col-xs-3">
+        <strong><a href="#">Search Talent</a></strong>
+      </div>
+    </div>
+    <div class="noview">
+      <p>You do not have permission to view this page, please <a href="/">LOGIN</a></p>
+    </div>
+    <script>
+      if(localStorage["employer"]==="true") {
+        $(".employer").show();
+        $(".noview").hide();
+      } else {
+        $(".employer").hide();
+        $(".noview").show();
+      }
+    </script>

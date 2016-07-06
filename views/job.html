@@ -1,5 +1,31 @@
-    <h1>Job Board</h1>
     <h2>View Job Details</h2>
-    <p>As a job seeker, I can view job details.</p>
-    <p>As a job seeker, I can click a link to apply (if my skills match job requirements).</p>
-    <p>As a job seeker, I can add a cover letter to my application.</p>
+    <div class="row applicant">
+      <div class="col-xs-4">
+        <strong><a href="/company">Company Name</a></strong><br>
+        <strong>Job Title</strong>
+      </div>
+      <div class="col-xs-4">
+        <strong>Job Description: </strong><br>
+        <p>Pour-over vegan neutra direct trade. Chambray mustache 3 wolf moon, biodiesel readymade seitan chartreuse hella authentic pork belly fixie. Lomo 8-bit bespoke mustache flexitarian mumblecore. PBR&B sustainable marfa lumbersexual. Shabby chic echo park readymade vice, cray forage church-key squid. Synth wolf biodiesel, cold-pressed church-key tousled vice messenger bag next level whatever twee kombucha. Meditation drinking vinegar green juice freegan, beard helvetica semiotics synth iPhone.</p>
+      </div>
+      <div class="col-xs-4">
+        <strong>Job Requirements:</strong>
+        <ul>
+          <li>High School Diploma</li>
+          <li>Computer Skills</li>
+          <li>Quick Learner</li>
+          <li>Self-Starter</li>
+          <li>Strong Work Ethic</li>
+        </ul>
+        <button>Apply Now</button>
+      </div>
+    </div>
+    <script>
+      if(localStorage["applicant"]==="true") {
+        $(".applicant").show();
+        $(".noview").hide();
+      } else {
+        $(".applicant").hide();
+        $(".noview").show();
+      }
+    </script>

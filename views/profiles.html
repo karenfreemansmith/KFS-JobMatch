@@ -1,5 +1,44 @@
-    <h1>Job Board</h1>
-    <h2>Find Applicants</h2>
-    <p>As an employer, I can search job seekers by skill/location/experience.</p>
-    <p>As an employer, I can click a link to view a job seeker's profile.</p>
-    <p>As an employer, I can recommend a job posting to a job seeker.</p>
+    <h2>Search Talent</h2>
+
+    <div class="row employer">
+      <div class="col-xs-12">
+        <form>
+          <Label>Skills: </label> <input type="text">
+          <Label>Experience Level: </label> <input type="text">
+          <Label>Location: </label> <input type="text">
+          <button>Find Talent</button>
+        </form>
+      </div>
+    </div>
+    <div class="row employer">
+      <div class="col-xs-6">
+        Applicant Name<br>
+        Applicant Name<br>
+        Applicant Name<br>
+        Applicant Name<br>
+      </div>
+      <div class="col-xs-3">
+        (<a href="/profile">view profile</a>)<br>
+        (<a href="/profile">view profile</a>)<br>
+        (<a href="/profile">view profile</a>)<br>
+        (<a href="/profile">view profile</a>)<br>
+      </div>
+      <div class="col-xs-3">
+        (<a href="#">Recommend Job</a>)<br>
+        (<a href="#">Recommend Job</a>)<br>
+        (<a href="#">Recommend Job</a>)<br>
+        (<a href="#">Recommend Job</a>)<br>
+      </div>
+    </div>
+    <div class="noview">
+      <p>You do not have permission to view this page, please <a href="/">LOGIN</a></p>
+    </div>
+    <script>
+      if(localStorage["employer"]==="true") {
+        $(".employer").show();
+        $(".noview").hide();
+      } else {
+        $(".employer").hide();
+        $(".noview").show();
+      }
+    </script>

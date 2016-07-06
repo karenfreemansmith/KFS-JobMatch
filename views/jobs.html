@@ -1,6 +1,44 @@
-    <h1>Job Board</h1>
     <h2>Find Jobs</h2>
-    <p>As a job seeker, I can search for jobs that match my porfolio (or other search criteria).</p>
-    <p>As a job seeker, I can sort/filter my search results by (skillset/location/salary/etc - default is by closest match, shown by %).</p>
-    <p>As a job seeker, I can click a link to see job details.</p>
-    <p>As a job seeker, I can click a link to see company details.</p>
+
+    <div class="row applicant">
+      <div class="col-xs-12">
+        <form>
+          <Label>Skills: </label> <input type="text">
+          <Label>Experience Level: </label> <input type="text">
+          <Label>Location: </label> <input type="text">
+          <button>Find Jobs</button>
+        </form>
+      </div>
+    </div>
+    <div class="row applicant">
+      <div class="col-xs-6">
+        Job Title (Experience Level, Skills List)<br>
+        Job Title (Experience Level, Skills List)<br>
+        Job Title (Experience Level, Skills List)<br>
+        Job Title (Experience Level, Skills List)<br>
+      </div>
+      <div class="col-xs-3">
+        (<a href="/job">view job description</a>)<br>
+        (<a href="/job">view job description</a>)<br>
+        (<a href="/job">view job description</a>)<br>
+        (<a href="/job">view job description</a>)<br>
+      </div>
+      <div class="col-xs-3">
+        (<a href="#">Apply</a>)<br>
+        (<a href="#">Apply</a>)<br>
+        (<a href="#">Apply</a>)<br>
+        (<a href="#">Apply</a>)<br>
+      </div>
+    </div>
+    <div class="noview">
+      <p>You do not have permission to view this page, please <a href="/">LOGIN</a></p>
+    </div>
+    <script>
+      if(localStorage["applicant"]==="true") {
+        $(".applicant").show();
+        $(".noview").hide();
+      } else {
+        $(".applicant").hide();
+        $(".noview").show();
+      }
+    </script>

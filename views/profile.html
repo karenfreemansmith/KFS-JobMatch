@@ -1,5 +1,44 @@
-    <h1>Job Board</h1>
-    <h2>View Applicant Profile</h2>
-    <p>As an employer, I can view applications an individua profile from an applicant.</p>
-    <p>As an employer, I can quickly respond by editing the application status (rejected/under consideration/etc).</p>
-    <p>As an employer, I can contact the applicant through a form or view their contact information.</p>
+    <h2>Applicant Profile</h2>
+
+    <div class="row employer">
+      <div class="col-xs-6"></div>
+      <div class="col-xs-6">
+        <button>Contact Applicant</button> <button>Update Application Status</button>
+      </div>
+    </div>
+    <div class="row employer">
+      <div class="col-xs-3">
+        <strong>Applicant Name</strong><br>
+        Software Engineer (10 years)<br>
+        City, State</br>
+        <img src="http://lorempixel.com/300/300/people" class="img-responsive" alt="applicant photo"><br>
+      </div>
+      <div class="col-xs-6">
+        <strong>Work Experience</strong><br>
+        (2012-2016) Job Title, Employer One, City, State<br>
+        (2010-2012) Job Title, Employer Two, City, State<br>
+        (2007-2010) Job Title, Employer Three, City, State<br>
+        <strong>Education</strong><br>
+        (2007) BS Computer Science, University of State<br>
+      </div>
+      <div class="col-xs-3">
+        <strong>Skills</strong><br>
+        HTML, CSS, JavaScript, Java, Python<br>
+        <strong>Awards</strong><br>
+        Designer of the Year, 2009<br>
+        <strong>Personal</strong><br>
+        Outdoor sports, Craft Beers<br>
+      </div>
+    </div>
+    <div class="noview">
+      <p>You do not have permission to view this page, please <a href="/">LOGIN</a></p>
+    </div>
+    <script>
+      if(localStorage["employer"]==="true") {
+        $(".employer").show();
+        $(".noview").hide();
+      } else {
+        $(".employer").hide();
+        $(".noview").show();
+      }
+    </script>

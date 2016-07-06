@@ -1,5 +1,40 @@
-    <h1>Job Board</h1>
-    <h2>View Applications</h2>
-    <p>As an employer, I can view applications (cover letters) of those applying for a job.</p>
-    <p>As an employer, I can quickly respond by editing the application status (rejected/under consideration/etc).</p>
-    <p>As an employer, I can click a link to see the applicants profile (resume & contatct information).</p>
+    <h2>Active Applications</h2>
+
+    <div class="row employer">
+      <strong>Job One</strong>
+      <div class="col-xs-12">
+        Applicant Name, Job Title (Experience Level) (<a href="/profile">View Full Profile</a>)<br>
+        <button>Contact Applicant</button> <button>Update Application Status</button><br>
+        Applicant Name, Job Title (Experience Level) (<a href="/profile">View Full Profile</a>)<br>
+        <button>Contact Applicant</button> <button>Update Application Status</button><br>
+        Applicant Name, Job Title (Experience Level) (<a href="/profile">View Full Profile</a>)<br>
+        <button>Contact Applicant</button> <button>Update Application Status</button><br>
+        Applicant Name, Job Title (Experience Level) (<a href="/profile">View Full Profile</a>)<br>
+        <button>Contact Applicant</button> <button>Update Application Status</button><br>
+      </div>
+    </div>
+    <div class="row employer">
+      <strong>Job Two</strong>
+      <div class="col-xs-12">
+        Applicant Name, Job Title (Experience Level) (<a href="/profile">View Full Profile</a>)<br>
+        <button>Contact Applicant</button> <button>Update Application Status</button><br>
+        Applicant Name, Job Title (Experience Level) (<a href="/profile">View Full Profile</a>)<br>
+        <button>Contact Applicant</button> <button>Update Application Status</button><br>
+        Applicant Name, Job Title (Experience Level) (<a href="/profile">View Full Profile</a>)<br>
+        <button>Contact Applicant</button> <button>Update Application Status</button><br>
+        Applicant Name, Job Title (Experience Level) (<a href="/profile">View Full Profile</a>)<br>
+        <button>Contact Applicant</button> <button>Update Application Status</button><br>
+      </div>
+    </div>
+    <div class="noview">
+      <p>You do not have permission to view this page, please <a href="/">LOGIN</a></p>
+    </div>
+    <script>
+      if(localStorage["employer"]==="true") {
+        $(".employer").show();
+        $(".noview").hide();
+      } else {
+        $(".employer").hide();
+        $(".noview").show();
+      }
+    </script>

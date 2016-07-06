@@ -1,5 +1,31 @@
-    <h1>Job Board</h1>
-    <h2>View Company Profile</h2>
-    <p>As a job seeker, I can view a company profile to learn more about an employer.</p>
-    <p>As a job seeker, I can view a listing of all job postings from this company.</p>
-    <p>As a job seeker, I can click a link to see details of other jobs.</p>
+    <h2>Company Profile</h2>
+
+    <div class="row applicant">
+      <div class="col-xs-4">
+        <strong><a href="#">Company Name</a></strong>
+        <img src="http://lorempixel.com/300/300/business" class="img-responsive" alt="company logo"><br>
+      </div>
+      <div class="col-xs-4">
+        <strong>About Company</strong>
+        <p>Job Description: Cold-pressed beard bicycle rights, kickstarter flannel disrupt chia keffiyeh art party ethical slow-carb squid paleo readymade truffaut. Food truck pour-over plaid bicycle rights selvage, man braid shoreditch echo park ramps salvia. Marfa microdosing godard small batch readymade. Messenger bag try-hard PBR&B, tumblr distillery master cleanse mlkshk raw denim. Cred portland 8-bit, craft beer austin +1 poutine venmo sriracha organic lumbersexual wayfarers tacos helvetica. Ugh chillwave freegan, tofu brooklyn ennui skateboard next level vice post-ironic humblebrag sartorial keytar readymade. Lomo blog schlitz viral lo-fi next level pitchfork crucifix seitan, PBR&B vice church-key hammock.</p>
+      </div>
+      <div class="col-xs-4">
+        <strong>Current Openings:</strong><br>
+        Job Title (Experience Level, Skills). <a href="/job">see more</a><br>
+        Job Title (Experience Level, Skills). <a href="/job">see more</a><br>
+        Job Title (Experience Level, Skills). <a href="/job">see more</a><br>
+        Job Title (Experience Level, Skills). <a href="/job">see more</a><br>
+      </div>
+    </div>
+    <div class="noview">
+      <p>You do not have permission to view this page, please <a href="/">LOGIN</a></p>
+    </div>
+    <script>
+      if(localStorage["applicant"]==="true") {
+        $(".applicant").show();
+        $(".noview").hide();
+      } else {
+        $(".applicant").hide();
+        $(".noview").show();
+      }
+    </script>

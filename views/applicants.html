@@ -1,5 +1,23 @@
-    <h1>Job Board</h1>
-    <h2>Manage Applications</h2>
-    <p>As a job seeker, I can create a profile describing my qualifications.</p>
-    <p>As a job seeker, I can search for jobs that match my profile (job requirements match job skills).</p>
-    <p>As a job seeker, I can view my submitted applications for feedback/status.</p>
+<div class="row applicant">
+  <div class="col-xs-4">
+    <a href="#">Create/Edit Profile</a>
+  </div>
+  <div class="col-xs-4">
+    <a href="#">Search for Jobs</a>
+  </div>
+  <div class="col-xs-4">
+    <a href="#">Application Status</a>
+  </div>
+</div>
+<div class="noview">
+  <p>You do not have permission to view this page, please <a href="/">LOGIN</a></p>
+</div>
+<script>
+  if(localStorage["applicant"]==="true") {
+    $(".applicant").show();
+    $(".noview").hide();
+  } else {
+    $(".applicant").hide();
+    $(".noview").show();
+  }
+</script>
