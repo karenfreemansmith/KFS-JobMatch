@@ -12,7 +12,7 @@
     <div class="container">
       <a href="/" class="navbar-brand navbar-left">Job Board</a>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdwn"><a href="#index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Job Seekers <span class="caret"></span></a>
+        <li class="dropdwn applicants"><a href="#index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Job Seekers <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li class="nav-item"><a href="/applicants" class="nav-link">Manage Applications</a></li>
             <li class="nav-item"><a href="/jobs" class="nav-link">Find Jobs</a></li>
@@ -20,7 +20,7 @@
             <li class="nav-item"><a href="/company" class="nav-link">View Company Profile</a></li>
             <li class="nav-item"><a href="/" class="nav-link">Login/out</a></li>
           </ul>
-        <li class="dropdwn"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
+        <li class="dropdwn employers"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li class="nav-item"><a href="/employers" class="nav-link">Manage Job Postings</a></li>
             <li class="nav-item"><a href="/profiles" class="nav-link">Find Applicants</a>
@@ -31,5 +31,17 @@
         </li>
       </ul>
     </div>
+    <script>
+      if(localStorage["employer"]==="true") {
+        $(".employers").show();
+      } else {
+        $(".employers").hide();
+      }
+      if(localStorage["applicant"]==="true") {
+        $(".applicants").show();
+      } else {
+        $(".applicants").hide();
+      }
+    </script>
   </nav>
   <div class="container">
