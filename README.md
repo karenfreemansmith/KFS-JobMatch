@@ -13,7 +13,7 @@ HTML, CSS/Sass, Bootstrap, JavaScript, jQuery, Gulp
 * Version 0.2.0 - add sass and gulpfile for development, extend site with pages for job board
 
 ## Setup/Installation
-* [View on Github Pages](https://karenfreemansmith.github.io/LHP-IntroWk2-Chatbot)
+* [View on Github Pages](https://karenfreemansmith.github.io/KFS-JobMatch/letter.html)
 * _OR_
 * Clone directory
 * Open index.html in your favorite browser
